@@ -5,11 +5,11 @@ $(document).ready(function(){
 // # = Nombre des produits
 // # ===============================
 	$.ajax({
-		url : 'blocs/count',
+		url : 'produits/count',
 		data : '',
 		type : 'GET',
 		success : function(data) {
-			$('#bloc').html(data);
+			$('#produit').html(data);
 		},
 		error : function(jqXHR, textStatus,
 				errorThrown) {
@@ -22,7 +22,7 @@ $(document).ready(function(){
 // # = Nombre des machines par marque
 // # ===============================
 	$.ajax({
-		url : 'blocs/count',
+		url : 'marques/count',
 		contentType : "application/json",
 		dataType : "json",
 		data : '',
