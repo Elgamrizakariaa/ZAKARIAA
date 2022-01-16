@@ -23,9 +23,6 @@ $(document)
 													data : "salle.code"
 												},
 												{
-													data : "user.username"
-												},
-												{
 													data : "statut"
 													
 												},
