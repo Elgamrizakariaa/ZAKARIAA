@@ -41,61 +41,67 @@
 		<a id="show-sidebar" class="btn btn-sm btn-dark" href="#"> <i
 			class="fas fa-bars"></i>
 		</a>
-		<nav id="sidebar" class="sidebar-wrapper">
-			<div class="sidebar-content">
-				<div class="sidebar-brand">
-					<a href="./" class="h2 pt-2">Market</a>
-					<div id="close-sidebar">
-						<i class="fas fa-times"></i>
-					</div>
-				</div>
-				<div class="sidebar-header">
-					<div class="user-pic">
-						<img class="img-responsive img-rounded" src="img/no-photo.png"
-							alt="User picture">
-					</div>
-					<div class="user-info">
-						<span class="user-name"> <strong>NOM </strong>
-						</span> <span class="user-role">ROLE</span> <span class="user-status">
-							<i class="fa fa-circle"></i> <span>Online</span>
-						</span>
-					</div>
-				</div>
-				<!-- sidebar-header  -->
+		
+		<nav id="sidebar" class="navbar navbar-expand-lg navbar-light" style="background-color: #1E90FF; font-weight:bold;">
+			<div class="container-fluid">
+				
+					<a style="margin-left: 5%;color: #FFC312;" href="./index.html" class="navbar-brand" >GES-RES-APP</a>
+					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 25%;">
+      
+           <li class="nav-item">
+			 <a  class="nav-link" href="./index.html" onclick="show('statistiques')">Statistiques</a>
+        </li>
+          
+          
+        
+         <li class="nav-item">
+			 <a  class="nav-link" href="./index.html" onclick="show('blocs')">Blocs</a>
+        </li>
+        <li class="nav-item">
+			 <a class="nav-link" href="./index.html" onclick="show('salles')">Salles</a>
+        </li>
+        
+          <li class="nav-item">
+			 <a class="nav-link" href="./index.html" onclick="show('marques')">Marques</a>
+        </li>
+        
+          <li class="nav-item">
+			<a  class="nav-link" href="./index.html" onclick="show('machines')">Machines</a> 
 
-				<!-- sidebar-search  -->
-				<div class="sidebar-menu">
-					<ul>
-						<li class="header-menu"><span>Gestion</span></li>
-						<li><a href="./index.html" onclick="show('blocs')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Blocs</a></li>
+       </li>
+       
+       <li class="nav-item">
+			<a class="nav-link" href="./index.html" onclick="show('creneaus')">Creneaux</a> 
 
-						<li><a href="./index.html" onclick="show('statistiques')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Statistiques</a></li>
+       </li>
+       
+       <li class="nav-item">
+			<a class="nav-link"  href="./index.html" onclick="show('reservations2')">Reservations</a> 
 
-						<li><a href="./index.html" onclick="show('marques')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Marques</a></li>
+       </li>
+        
+        <li class="nav-item">
+			<a class="nav-link" href="./index.html" onclick="show('users')">Utilisateurs</a>
 
+       </li>
+        
+        
+        
+			
 
-						<li><a href="./index.html" onclick="show('machines')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Machines</a></li>
-                        
-                        <li><a href="./index.html" onclick="show('salles')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Salles</a></li>
-						<li><a href="./index.html" onclick="show('creneaus')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Creneaux</a></li>
-					    <li><a href="./index.html" onclick="show('users')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Utilisateurs</a></li>
-					</ul>
-				</div>
-				<!-- sidebar-menu  -->
-			</div>
-			<!-- sidebar-content  -->
-			<div class="sidebar-footer">
-				<a href="/logout"> <i class="fa fa-power-off"></i> <span>Déconnexion</span>
-				</a>
-			</div>
-		</nav>
+                         <li style="margin-left: 10%;" ><a class="btn btn-warning " href="/logout"> <span>Déconnexion</span></a></li>
+					  </ul>	
+			
+		
+		
+		 </div>
+  </div>
+</nav>
+		
 		<!-- sidebar-wrapper  -->
 		<main class="page-content">
 		<div class="container-fluid" id="main-content"></div>
